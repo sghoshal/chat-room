@@ -33,7 +33,7 @@ public class WebsocketConnectServlet extends HttpServlet {
     public void onOpen(Session session) {
         boolean isAdded = connectedSockets.add(session);
         System.out.println("Server: Session opened. " + session.getId());
-        System.out.println("Could add to set? " + isAdded + "Size of connectedSockets Set: " + connectedSockets.size());
+        System.out.println("Size of connectedSockets Set: " + connectedSockets.size());
     }
 
     @OnMessage
